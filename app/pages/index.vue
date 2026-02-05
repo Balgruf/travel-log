@@ -13,5 +13,6 @@
         </button>
       </div>
     </div>
+    <DbConnectionStatus />
   </div>
 </template>

@@ -18,6 +18,7 @@
     "@nuxtjs/color-mode": "4.0.0",
     "@tailwindcss/vite": "^4.1.18",
     "nuxt": "^4.3.0",
+    "nuxt-mongoose": "1.0.6",
     "tailwindcss": "^4.1.18",
     "vue": "^3.5.27",
     "vue-router": "^4.6.4",
