@@ -1,15 +1,16 @@
+<script lang="ts" setup>
+</script>
+
 <template>
   <div class="navbar bg-secondary text-secondary-content">
     <div class="navbar-start">
       <NuxtLink to="/" class="btn btn-ghost text-xl">
-        Travel Log
+        env. App Name
       </NuxtLink>
     </div>
     <div class="navbar-end">
       <AppThemeToggle />
-      <button class="btn btn-accent">
-        Sign In with Github <Icon name="tabler:brand-github" size="24" />
-      </button>
+      <AuthGithubBtn />
     </div>
   </div>
 </template>
