@@ -17,6 +17,7 @@ export const auth = betterAuth({
   },
   trustedOrigins: [
     'http://localhost:3000',
+    'https://travel-g7fkc933a-balgrufs-projects.vercel.app',
     // eslint-disable-next-line node/no-process-env
     ...(process.env.VERCEL_URL ? [`https://${process.env.VERCEL_URL}`] : []),
   ],
