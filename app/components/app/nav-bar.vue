@@ -1,15 +1,19 @@
+<script lang="ts" setup>
+// import env from '~/lib/env'
+// eslint-disable-next-line node/no-process-env
+const name = process.env.APP_NAME;
+</script>
+
 <template>
   <div class="navbar bg-secondary text-secondary-content">
     <div class="navbar-start">
       <NuxtLink to="/" class="btn btn-ghost text-xl">
-        Travel Log
+        {{ name }}
       </NuxtLink>
     </div>
     <div class="navbar-end">
       <AppThemeToggle />
-      <button class="btn btn-accent">
-        Sign In with Github <Icon name="tabler:brand-github" size="24" />
-      </button>
+      <AuthGithubBtn />
     </div>
   </div>
 </template>
