@@ -15,4 +15,9 @@ export const auth = betterAuth({
       clientSecret: env.GITHUB_CLIENT_SECRET as string,
     },
   },
+  trustedOrigins: [
+    'http://localhost:3000',
+    // eslint-disable-next-line node/no-process-env
+    ...(process.env.VERCEL_URL ? [`https://${process.env.VERCEL_URL}`] : []),
+  ],
 });
